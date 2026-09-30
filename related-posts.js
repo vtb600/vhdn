@@ -21,7 +21,14 @@ const RELATED_POSTS = [
     alt: "CX DAY 2026 - Trải nghiệm xuất sắc, kết nối niềm tin",
     date: "Ngày 26, Tháng 9, Năm 2026",
     title: "CX DAY 2026 - TRẢI NGHIỆM XUẤT SẮC, KẾT NỐI NIỀM TIN"
-  },  
+  },
+  {
+    url: "https://vtb600.github.io/vhdn/caitien1608/index.html",
+    thumb: "https://raw.githubusercontent.com/vtb600/vhdn/main/caitien1608/thumb.jpeg",
+    alt: "Đào tạo tư duy cải tiến liên tục",
+    date: "Ngày 16, Tháng 08, Năm 2026",
+    title: "ĐÀO TẠO - TƯ DUY CẢI TIẾN LIÊN TỤC"
+  },
   {
     url: "https://vtb600.github.io/vhdn/soket2507/index.html",
     thumb: "https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/thumb.jpeg",
