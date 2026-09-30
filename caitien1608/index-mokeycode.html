@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#00417a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/vtb600/vhdn/main/logovtb2.png" />
+  <title>Hội nghị Sơ kết 2026 – VietinBank Bình Thuận</title>
+  <meta property="og:title" content="VIETINBANK BÌNH THUẬN HỘI NGHỊ SƠ KẾT CÔNG TÁC ĐẢNG, CÔNG TÁC KINH DOANH 6 THÁNG ĐẦU NĂM VÀ TRIỂN KHAI NHIỆM VỤ 6 THÁNG CUỐI NĂM 2026" />
+  <meta property="og:description" content="Trang thông tin về VHDN của VietinBank Chi nhánh Bình Thuận." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/thumb.jpeg" />
+  <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/thumb.jpeg">
+  <meta property="og:image:width" content="1161" />
+  <meta property="og:image:height" content="715" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:url" content="https://vtb600.github.io/vhdn/" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      /* Bảng màu thương hiệu VietinBank */
+      --vtb-blue:         #0067a3;   /* Xanh dương đậm - màu chủ đạo */
+      --vtb-blue-dark:    #00417a;
+      --vtb-navy:         #003055;
+      --vtb-blue-light:   #e6f2fa;
+      --vtb-blue-lighter: #f0f8ff;
+      --vtb-red:          #e8193c;   /* Đỏ VietinBank */
+      --vtb-red-dark:     #b3123a;
+      --vtb-gold:         #f5a623;   /* Vàng gold */
+      --vtb-gold-deep:    #d97a12;
+      --vtb-gold-light:   #fff3d6;
+      --cream:            #f7fafc;
+      --soft:             #eef5fb;
+      --dark:             #0d2a3d;
+      --muted:            #5a6b7a;
+      --white:            #ffffff;
+      --border:           #dbe7f0;
+      --shadow-sm: 0 2px 12px rgba(0,65,122,.08);
+      --shadow-md: 0 10px 30px rgba(0,65,122,.12);
+      --shadow-lg: 0 20px 50px rgba(0,65,122,.20);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 18px;
+      scroll-padding-top: 76px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background:
+        radial-gradient(1100px 480px at 88% -4%, rgba(245,166,35,.08), transparent 60%),
+        radial-gradient(900px 460px at 0% 8%, rgba(232,25,60,.05), transparent 55%),
+        linear-gradient(180deg, #f7fafc 0%, #eef5fb 100%);
+      color: var(--dark);
+      overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a, button, [role="button"] {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    img { max-width: 100%; height: auto; }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .65rem 1.5rem;
+      padding-top: calc(.65rem + env(safe-area-inset-top, 0px));
+      background: rgba(255,255,255,.86);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 18px rgba(0,65,122,.06);
+    }
+    .topbar-brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; }
+    .topbar-brand img { width: 48px; height: auto; }
+    .topbar-brand-name {
+      font-weight: 800;
+      color: var(--vtb-blue-dark);
+      font-size: 1rem;
+      line-height: 1.15;
+    }
+    .topbar-brand-name small {
+      display: block;
+      font-size: .62rem;
+      font-weight: 800;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--vtb-gold-deep);
+      margin-top: .15rem;
+    }
+    .topbar-links { display: flex; gap: .15rem; list-style: none; margin: 0; }
+    .topbar-links a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .84rem;
+      padding: .45rem .85rem;
+      border-radius: 100px;
+      transition: background .25s ease, color .25s ease;
+      white-space: nowrap;
+    }
+    .topbar-links a:hover { background: var(--vtb-blue-light); color: var(--vtb-blue-dark); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      min-height: 90svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at top right, rgba(245,166,35,.30), transparent 52%),
+        radial-gradient(ellipse at bottom left, rgba(232,25,60,.22), transparent 50%),
+        linear-gradient(150deg, #0067a3 0%, #00417a 45%, #003055 100%);
+      padding: 3.5rem 1.5rem 5rem;
+      padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+    }
+
+    /* Decorative pattern overlay */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,.045) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,.045) 25%, transparent 25%);
+      background-size: 42px 42px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Logo VietinBank trên hero */
+    .hero-logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 1.6rem;
+      padding: .55rem;
+      animation: fadeUp .8s ease both;
+    }
+
+    /* floating bubbles */
+    .bubbles { position: absolute; inset: 0; pointer-events: none; }
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      opacity: .18;
+      animation: float linear infinite;
+    }
+    .bubble:nth-child(1)  { width:120px; height:120px; background:#fff; left:8%;  top:10%; animation-duration:9s;  animation-delay:0s;  }
+    .bubble:nth-child(2)  { width:60px;  height:60px;  background:#ffe9bd;  left:80%; top:5%;  animation-duration:7s;  animation-delay:1s;  }
+    .bubble:nth-child(3)  { width:90px;  height:90px;  background:#fff; left:55%; top:70%; animation-duration:11s; animation-delay:2s;  }
+    .bubble:nth-child(4)  { width:40px;  height:40px;  background:#ffe9bd;  left:20%; top:75%; animation-duration:8s;  animation-delay:3s;  }
+    .bubble:nth-child(5)  { width:70px;  height:70px;  background:#fff; left:45%; top:15%; animation-duration:10s; animation-delay:0.5s;}
+    @keyframes float {
+      0%   { transform: translateY(0)   rotate(0deg); }
+      50%  { transform: translateY(-30px) rotate(180deg); }
+      100% { transform: translateY(0)   rotate(360deg); }
+    }
+
+    .hero-inner { position: relative; z-index: 2; max-width: 820px; }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,.10);
+      border: 1.5px solid rgba(245,166,35,.55);
+      color: #ffe9bd;
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: .6rem 1.4rem;
+      border-radius: 100px;
+      margin-bottom: 1.6rem;
+      animation: fadeUp .8s ease both;
+      line-height: 1.8;
+      word-break: break-word;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 9vw, 3.9rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.28;
+      margin-bottom: 1.2rem;
+      animation: fadeUp .9s .1s ease both;
+      word-break: break-word;
+      text-shadow: 0 4px 30px rgba(0,15,40,.35);
+    }
+    .hero h1 em {
+      font-style: italic;
+      display: block;
+      background: linear-gradient(115deg, #ffe6ab 0%, #f5a623 38%, #ffd98a 65%, #e8891d 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      filter: drop-shadow(0 4px 16px rgba(245,166,35,.45));
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.92);
+      max-width: 600px;
+      margin: 0 auto 1.2rem;
+      line-height: 1.8;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+      animation: fadeUp .9s .2s ease both;
+      word-break: break-word;
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: .8rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeUp .9s .3s ease both;
+      margin-top: .9rem;
+    }
+    .hero-meta span {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.28);
+      color: #fff;
+      font-size: .9rem;
+      font-weight: 600;
+      padding: .55rem 1.05rem;
+      border-radius: 100px;
+      line-height: 1.4;
+      backdrop-filter: blur(6px);
+      transition: all .25s ease;
+    }
+    .hero-meta span:hover {
+      background: rgba(245,166,35,.28);
+      border-color: var(--vtb-gold);
+      transform: translateY(-3px);
+    }
+
+    .hero-wave {
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      height: 90px;
+    }
+
+    /* ── ARTICLE ── */
+    .article {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 5rem;
+    }
+
+    /* section card */
+    .section {
+      background: var(--white);
+      border-radius: 22px;
+      padding: 2.6rem 2.2rem;
+      margin-bottom: 2.4rem;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s ease, transform .7s ease, box-shadow .3s ease;
+      border-top: 5px solid transparent;
+      position: relative;
+      overflow: hidden;
+      scroll-margin-top: 84px;
+    }
+    .section:hover {
+      box-shadow: var(--shadow-lg);
+    }
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section.accent-red  { border-top-color: var(--vtb-red); }
+    .section.accent-gold { border-top-color: var(--vtb-gold); }
+    .section.accent-blue { border-top-color: var(--vtb-blue); }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      font-size: .78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      color: var(--vtb-blue-dark);
+      background: linear-gradient(135deg, var(--vtb-blue-light), var(--vtb-blue-lighter));
+      border: 1px solid rgba(0,103,163,.18);
+      padding: .45rem 1rem .45rem .85rem;
+      border-radius: 100px;
+      margin-bottom: 1.1rem;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--vtb-gold), #ff8a00);
+      box-shadow: 0 0 0 4px rgba(245,166,35,.20);
+      flex-shrink: 0;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--vtb-blue-dark);
+      margin-bottom: 1.3rem;
+      line-height: 1.4;
+      word-break: break-word;
+      position: relative;
+      padding-bottom: .85rem;
+    }
+    .section h2::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 60px; height: 4px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, var(--vtb-blue), var(--vtb-gold));
+    }
+
+    .section p {
+      font-size: 1.05rem;
+      line-height: 1.95;
+      color: #2c3e50;
+      margin-bottom: .9rem;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+    .section p:last-child { margin-bottom: 0; }
+
+    /* activity list */
+    .activity-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .85rem;
+      margin-top: 1rem;
+    }
+    .activity-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: .9rem;
+      background: linear-gradient(135deg, var(--vtb-blue-light), #f0f7fc);
+      border-left: 4px solid var(--vtb-blue);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      font-size: 1.02rem;
+      color: #2c3e50;
+      line-height: 1.7;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .activity-list li:hover {
+      transform: translateX(6px);
+      box-shadow: var(--shadow-sm);
+      border-left-color: var(--vtb-gold);
+    }
+    .activity-list li .icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      margin-top: .05rem;
+    }
+
+    /* quote block */
+    .quote-block {
+      position: relative;
+      background: linear-gradient(135deg, var(--vtb-blue-light), var(--vtb-blue-lighter) 55%, var(--vtb-gold-light));
+      border-left: 5px solid var(--vtb-blue);
+      border-radius: 0 18px 18px 0;
+      padding: 1.8rem 2rem;
+      margin: 1.6rem 0;
+      word-break: break-word;
+      box-shadow: inset 0 0 0 1px rgba(0,103,163,.06);
+    }
+    .quote-block::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 5.5rem;
+      color: var(--vtb-blue);
+      opacity: .18;
+      position: absolute;
+      top: -12px; left: 12px;
+      line-height: 1;
+    }
+    .quote-block p {
+      font-size: 1.08rem;
+      color: #0d2a3d;
+      line-height: 2;
+      margin-bottom: .4rem;
+      position: relative;
+      z-index: 1;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+    .quote-block p strong { color: var(--vtb-red-dark); }
+
+    /* photo grid */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.4rem 0;
+    }
+    .photo-grid img {
+      width: 100%;
+      border-radius: 14px;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+      display: block;
+      background: var(--vtb-blue-light);
+      box-shadow: var(--shadow-sm);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .photo-grid img:hover {
+      transform: scale(1.02);
+      box-shadow: var(--shadow-md);
+    }
+    .photo-grid img.wide {
+      grid-column: 1 / -1;
+      aspect-ratio: 16/7;
+    }
+
+    /* photo placeholder */
+    .photo-ph {
+      width: 100%;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+      font-size: .85rem;
+      font-weight: 600;
+      text-align: center;
+      margin: 1.2rem 0;
+      padding: 0;
+      background: none;
+    }
+    .photo-ph img {
+      width: 100%;
+      border-radius: 16px;
+      display: block;
+      height: auto;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .photo-ph img:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .photo-ph .ph-icon { font-size: 2.5rem; }
+
+    /* caption */
+    .caption {
+      text-align: center;
+      font-style: italic;
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top: .3rem;
+      margin-bottom: .8rem;
+      line-height: 1.5;
+      padding: .45rem .9rem;
+      border-left: 3px solid var(--vtb-gold);
+      border-right: 3px solid var(--vtb-gold);
+      background: var(--vtb-gold-light);
+      border-radius: 8px;
+      max-width: 92%;
+    }
+    .caption strong { color: var(--vtb-blue-dark); font-style: normal; }
+
+    /* closing banner */
+    .closing-banner {
+      background:
+        radial-gradient(ellipse at top right, rgba(245,166,35,.32), transparent 50%),
+        radial-gradient(ellipse at bottom left, rgba(232,25,60,.20), transparent 50%),
+        linear-gradient(135deg, #0067a3 0%, #00417a 55%, #003055 100%);
+      border-radius: 24px;
+      padding: 3.2rem 2.6rem;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      word-break: break-word;
+      box-shadow: var(--shadow-lg);
+      scroll-margin-top: 84px;
+    }
+    .closing-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,.04) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,.04) 25%, transparent 25%);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+    .closing-banner::after {
+      content: '❤️';
+      position: absolute;
+      font-size: 11rem;
+      opacity: .09;
+      right: -24px; bottom: -28px;
+      pointer-events: none;
+    }
+    .closing-banner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.35;
+      color: #fff;
+      word-break: break-word;
+      text-shadow: 0 4px 26px rgba(0,15,40,.4);
+    }
+    .closing-banner p {
+      font-size: 1.05rem;
+      opacity: .94;
+      line-height: 1.85;
+      max-width: 600px;
+      margin: 0 auto .9rem;
+      color: #fff;
+    }
+
+    /* footer */
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem 3.5rem;
+      font-size: .92rem;
+      background: linear-gradient(180deg, var(--vtb-navy), #00223f);
+      color: rgba(255,255,255,.78);
+      border-top: 4px solid var(--vtb-gold);
+      position: relative;
+      overflow: hidden;
+    }
+    footer::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,.03) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,.03) 25%, transparent 25%);
+      background-size: 36px 36px;
+      pointer-events: none;
+    }
+    footer strong { color: #fff; font-weight: 800; }
+    footer .footer-tag {
+      font-size: .72rem;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--vtb-gold);
+      font-weight: 800;
+      margin-bottom: .5rem;
+    }
+    footer .footer-logo {
+      width: 92px;
+      height: auto;
+      margin-bottom: .9rem;
+      filter: drop-shadow(0 6px 18px rgba(0,0,0,.4));
+    }
+
+    /* ── RELATED POSTS ── */
+    .related-posts {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+      scroll-margin-top: 84px;
+    }
+    .related-posts-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--vtb-blue-dark);
+      margin-bottom: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+    }
+    .related-posts-title::after {
+      content: '';
+      flex: 1;
+      height: 3px;
+      background: linear-gradient(to right, var(--vtb-blue), var(--vtb-gold), transparent);
+      border-radius: 2px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+    .related-card {
+      background: var(--white);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+      color: inherit;
+      transition: transform .25s ease, box-shadow .25s ease;
+      display: flex;
+      flex-direction: column;
+      border-top: 4px solid var(--vtb-blue);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .related-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-top-color: var(--vtb-gold);
+    }
+    .related-card-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: linear-gradient(135deg, var(--vtb-blue-light), var(--vtb-gold-light));
+      display: block;
+    }
+    .related-card-thumb-ph {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, var(--vtb-blue-light), var(--vtb-gold-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      overflow: hidden;
+    }
+    .related-card-thumb-ph img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .related-card-body {
+      padding: .9rem 1rem 1.1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+    }
+    .related-card-date {
+      font-size: .78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--vtb-gold-deep);
+    }
+    .related-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.4;
+    }
+
+    /* animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── TƯƠNG TÁC CẢM ỨNG: loại bỏ hover "dính" trên màn hình cảm ứng ── */
+    @media (hover: none) {
+      .topbar-links a:hover { background: transparent; color: var(--dark); }
+      .hero-meta span:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.28); transform: none; }
+      .activity-list li:hover { transform: none; box-shadow: none; border-left-color: var(--vtb-blue); }
+      .photo-ph img:hover, .photo-grid img:hover { transform: none; box-shadow: var(--shadow-sm); }
+      .section:hover { box-shadow: var(--shadow-md); }
+      .related-card:hover { transform: none; box-shadow: var(--shadow-sm); border-top-color: var(--vtb-blue); }
+    }
+
+    /* ── RESPONSIVE: Mobile chung (≤600px) ── */
+    @media (max-width: 600px) {
+      html { font-size: 17px; }
+
+      .topbar {
+        padding: .6rem 1rem;
+        padding-top: calc(.6rem + env(safe-area-inset-top, 0px));
+      }
+      .topbar-links { display: none; }
+
+      /* Giảm tải hiệu ứng để tiết kiệm pin, mượt trên iPhone */
+      .bubbles { opacity: .5; }
+      .bubble { animation-play-state: paused; }
+      .hero-badge, .hero-meta span { backdrop-filter: none; -webkit-backdrop-filter: none; }
+
+      .section {
+        padding: 1.8rem 1.4rem;
+      }
+
+      /* Căn trái nội dung để dễ đọc trên màn hình hẹp */
+      .section p, .activity-list li, .quote-block p { text-align: left; }
+
+      .related-posts {
+        padding: 0 1.2rem 3.5rem;
+      }
+    }
+
+    /* ── RESPONSIVE: iPhone phổ biến (≤430px) ── */
+    @media (max-width: 430px) {
+      html { font-size: 16px; }
+
+      .topbar-brand img { width: 42px; }
+      .topbar-brand-name { font-size: .92rem; }
+
+      .hero {
+        padding: 2.5rem 1.2rem 4.5rem;
+        padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+        min-height: auto;
+      }
+      .hero-logo {
+        width: 100px;
+        padding: .45rem;
+        border-radius: 18px;
+      }
+      .hero h1 { font-size: clamp(1.7rem, 8vw, 2.4rem); }
+      .hero h1 span { font-size: 1.35rem !important; }
+      .hero h1 em { font-size: 1.35rem !important; }
+      .hero-badge {
+        font-size: .76rem;
+        letter-spacing: .06em;
+        padding: .5rem 1.1rem;
+      }
+      .hero-sub {
+        font-size: 1rem;
+        text-align: left;
+        margin-bottom: 1.2rem;
+      }
+      .hero-meta {
+        gap: .6rem;
+      }
+      .hero-meta span {
+        font-size: .88rem;
+        padding: .6rem .95rem;
+      }
+
+      .article {
+        padding: 2.5rem 1rem 4rem;
+      }
+      .section {
+        padding: 1.6rem 1.2rem;
+        border-radius: 18px;
+        margin-bottom: 1.6rem;
+      }
+      .section h2 {
+        font-size: 1.28rem;
+      }
+      .section p {
+        font-size: 1rem;
+        line-height: 1.85;
+      }
+      .section-label {
+        font-size: .76rem;
+      }
+      .activity-list li {
+        font-size: .98rem;
+        padding: .9rem 1rem;
+      }
+      .activity-list li .icon {
+        font-size: 1.4rem;
+      }
+      .quote-block {
+        padding: 1.4rem 1.2rem 1.4rem 1.1rem;
+      }
+      .quote-block p {
+        font-size: 1rem;
+        line-height: 1.9;
+      }
+      .photo-grid { grid-template-columns: 1fr; }
+      .photo-grid img.wide { aspect-ratio: 4/3; }
+      .closing-banner {
+        padding: 2.2rem 1.3rem;
+        border-radius: 18px;
+      }
+      .closing-banner h2 {
+        font-size: 1.45rem;
+      }
+      .closing-banner p {
+        font-size: .98rem;
+      }
+
+      .related-posts {
+        padding: 0 1rem 3rem;
+      }
+      .related-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .related-card-title {
+        font-size: .95rem;
+      }
+
+      footer {
+        padding: 2.6rem 1.2rem 3rem;
+        padding-bottom: calc(3rem + env(safe-area-inset-bottom, 0px));
+      }
+    }
+
+    /* ── RESPONSIVE: Màn hình rất nhỏ (≤375px) ── */
+    @media (max-width: 375px) {
+      html { font-size: 15px; }
+
+      .hero h1 { font-size: clamp(1.5rem, 7.5vw, 2rem); }
+      .hero-meta {
+        gap: .5rem;
+      }
+      .hero-meta span {
+        font-size: .82rem;
+        padding: .5rem .75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="bubbles">
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div>
+  </div>
+  <div class="hero-inner">
+    <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/logovtb2.png" alt="VietinBank" class="hero-logo" />
+    <div class="hero-badge">
+      🎉 VIETINBANK BÌNH THUẬN TỔ CHỨC HỘI NGHỊ <br>
+      SƠ KẾT CÔNG TÁC ĐẢNG, CÔNG TÁC KINH DOANH 6 THÁNG ĐẦU NĂM VÀ <br>
+      TRIỂN KHAI NHIỆM VỤ 6 THÁNG CUỐI NĂM 2026 🎉
+    </div>
+    <h1>
+      <span style="color:#ffffff; font-size:1.8rem;">NÂNG CAO HIỆU QUẢ</span><br>
+      <em style="font-size:1.6rem;">BỨT PHÁ THÀNH CÔNG</em>
+    </h1>
+    <p class="hero-sub"><span style="color:#ffffff;"> ✨ Nhằm đánh giá toàn diện kết quả lãnh đạo, chỉ đạo của Cấp ủy và hiệu quả hoạt động kinh doanh trong 6 tháng đầu năm, đồng thời đề ra phương hướng, giải pháp trọng tâm cho chặng đường nước rút năm 2026, <strong>VietinBank Bình Thuận</strong> đã long trọng tổ chức Hội nghị Sơ kết công tác Đảng, công tác kinh doanh 6 tháng đầu năm và triển khai nhiệm vụ 6 tháng cuối năm 2026.</span></p>
+    <p class="hero-sub"><span style="color:#ffffff;">🔥 Trong 6 tháng đầu năm 2026, dưới sự chỉ đạo sát sao của Cấp ủy và Ban giám đốc, <strong>VietinBank Bình Thuận</strong> đã bản lĩnh vượt qua khó khăn, giữ vững đà tăng trưởng an toàn, hiệu quả. Hội nghị là dịp để ghi nhận những nỗ lực xuất sắc của tập thể, thẳng thắn nhìn nhận các điểm cần tối ưu, từ đó thống nhất ý chí, sẵn sàng bứt phá mạnh mẽ trong 6 tháng cuối năm.</span></p>
+    <div class="hero-meta">
+      <span>📅 Ngày 25/07/2026</span>
+      <span>📍 Hội trường Chi nhánh</span>
+      <span>👨‍👩‍👧 Toàn thể CBNV</span>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f0f8fd"/>
+  </svg>
+</header>
+
+<!-- ARTICLE -->
+<main class="article">
+
+  <!-- Intro -->
+  <div class="section accent-red" id="dang">
+    <div class="section-label">CÔNG TÁC ĐẢNG</div>
+    <h2>🌟 <span style="color:#0067a3;">Hội nghị sơ kết công tác Đảng 6 tháng đầu năm 2026</span></h2>
+    <p>
+      🤝 Hội nghị đã tập trung đánh giá kết quả công tác xây dựng Đảng và công tác kiểm tra, giám sát trong 6 tháng đầu năm, làm cơ sở để triển khai nhiệm vụ cho 6 tháng cuối năm
+    </p>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/dang.jpeg" alt="công tác Đảng" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- Activities -->
+  <div class="section accent-gold" id="kinhdoanh">
+    <div class="section-label">HOẠT ĐỘNG KINH DOANH</div>
+    <h2>🔥 <span style="color:#0067a3;">Triển khai nhiệm vụ kinh doanh 6 tháng cuối năm 2026</span></h2>
+    <p>
+      🌟 Với tinh thần nhìn thẳng vào kết quả để đánh giá, Ban Giám đốc đã trình bày Kết quả kinh doanh 6 tháng đầu năm và những định hướng trọng tâm cho 6 tháng cuối năm 2026.
+    </p>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/khoa.jpeg" alt="Anh Trần Phước Khoa, Giám đốc chi nhánh" loading="lazy" />
+      <div class="caption"><strong>Anh Trần Phước Khoa, Giám đốc chi nhánh:</strong> <br> Đánh giá Kết quả hoạt động và định hướng trọng tâm 6 tháng cuối năm 2026.</div>
+    </div>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/ngan.jpeg" alt="Chị Nguyễn Thị Tố Ngân, Phó Giám đốc" loading="lazy" />
+      <div class="caption"><strong>Chị Nguyễn Thị Tố Ngân, Phó Giám đốc:</strong> <br> Tăng trưởng dư nợ Khối Bán lẻ và Thu phí dịch vụ.</div>
+    </div>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/phiem.jpeg" alt="Anh Phạm Ngọc Phiếm, Phó Giám đốc" loading="lazy" />
+      <div class="caption"><strong>Anh Phạm Ngọc Phiếm, Phó Giám đốc:</strong> <br>Tăng trưởng dư nợ Khối KHDN và Kiểm soát chất lượng nợ.</div>
+    </div>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/nguyet.jpeg" alt="Chị Nguyễn Thị Mai Nguyệt, Phó Giám đốc" loading="lazy" />
+      <div class="caption"><strong>Chị Nguyễn Thị Mai Nguyệt, Phó Giám đốc:</strong> <br>Năng suất lao động GDV và Chất lượng dịch vụ</div>
+    </div>
+  </div>
+
+  <div class="section accent-blue" id="canbo">
+    <div class="section-label">CÔNG TÁC CÁN BỘ</div>
+    <h2>🌎 <span style="color:#0067a3;">Lễ công bố Quyết định về công tác cán bộ</span></h2>
+    <p>
+      ⭐ Nhằm đào tạo và phát triển cán bộ, 3 lãnh đạo phòng đã được điều động, bổ nhiệm giữ các vị trí Phó phòng tại Chi nhánh.
+    </p>
+
+    <div class="quote-block">
+      <p>- 🥇 Anh Trần Tuấn Lâm - Phó phòng phụ trách PGD số 2 Phan Thiết</p>
+      <p>- 🥇 Anh Ninh Đức Bình - Phó phòng KHDN</p>
+      <p>- 🥇 Anh Trần Thanh Huy - Phó phòng PGD Đức Linh</p>
+    </div>
+
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/ctcb.jpeg" alt="Lễ công bố Quyết định về công tác cán bộ" loading="lazy" />
+    </div>
+
+  </div><!-- end section accent-blue -->
+
+  <div class="section accent-blue" id="vhdn">
+    <div class="section-label">VĂN HOÁ DOANH NGHIỆP</div>
+    <h2>💖 <span style="color:#0067a3;">Tìm hiểu về VHDN nhân dịp 38 năm thành lập VietinBank</span></h2>
+    <p>
+      💥 Nhằm lan toả VHDN đến toàn thể CBNV, Chi nhánh đã tổ chức buổi tìm hiểu về VHDN nhân dịp 38 năm thành lập VietinBank dưới hình thức gameshow AI LÀ TRIỆU PHÚ.<br>
+      💡 Thông qua các câu hỏi xoay quanh giá trị cốt lõi, quy tắc ứng xử và bản sắc văn hoá VietinBank, gameshow mang đến không khí sôi động, hào hứng, giúp CBNV vừa giải trí vừa ôn lại và thấm nhuần tinh thần văn hoá doanh nghiệp một cách tự nhiên, gần gũi.
+    </p>
+
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/vhdn.jpg" alt="MC Cao An Nhựt" loading="lazy" />
+      <div class="caption">MC Cao An Nhựt</div>
+    </div>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/vhdn4.png" alt="Thí sinh tham dự chương trình" loading="lazy" />
+      <div class="caption">Thí sinh tham dự chương trình: Nguyễn Huỳnh Gia Bảo - Phòng bán lẻ</div>
+    </div>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/vhdn1.jpeg" alt="Thí sinh tham dự chương trình" loading="lazy" />
+      <div class="caption">Thí sinh tham dự chương trình: Tạ Thị Thanh Hương - P. HTTD</div>
+    </div>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/vhdn2.jpeg" alt="Trao giải thưởng chương trình" loading="lazy" />
+      <div class="caption">Trao giải thưởng chương trình cho Thí sinh và khán giả xuất sắc</div>
+    </div>
+  </div><!-- end section accent-blue -->
+
+
+  <div class="section accent-blue" id="khenthuong">
+    <div class="section-label">VINH DANH KHEN THƯỞNG</div>
+    <h2>🏆 <span style="color:#0067a3;">Các cá nhân có thành tích trong HĐKD và nhận Bằng khen của NHNN, Tổng LĐLĐ Việt Nam</span></h2>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/khenthuong.jpeg" alt="Vinh danh khen thưởng" loading="lazy" />
+    </div>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/khenthuong1.jpeg" alt="Vinh danh khen thưởng" loading="lazy" />
+    </div>
+  </div><!-- end section accent-blue -->
+
+  <div class="section accent-blue" id="trian">
+    <div class="section-label">TRI ÂN</div>
+    <h2>❤️ <span style="color:#0067a3;">Anh Nguyễn Hoài Tân - 43 Năm – Một Hành Trình Trọn Vẹn Niềm Tin và Trách Nhiệm</span></h2>
+    <p>
+      🎉 Anh Nguyễn Hoài Tân đã có 43 năm công tác tại VietinBank Bình Thuận, về hưu theo chế độ hưu trí kể từ ngày 01/8/2026 <br>
+      ⭐ Từ những ngày đầu gian khó: Anh đã gắn bó với Chi nhánh từ những bước đi đầu tiên, cùng tập thể vượt qua nhiều giai đoạn trầm hẫng, biến động của nền kinh tế cũng như ngành ngân hàng. <br>
+      💯 Bền bỉ và kiên định: Dù ở bất kỳ vị trí công tác nào, Anh cũng luôn thể hiện tinh thần trách nhiệm cao độ, sự tận tụy, chân thành và lòng kiên trung với VietinBank.
+    </p>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/tan.jpeg" alt="Anh Nguyễn Hoài Tân" loading="lazy" />
+    </div>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/tan1.jpeg" alt="Anh Nguyễn Hoài Tân" loading="lazy" />
+    </div>
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/tan2.jpeg" alt="Anh Nguyễn Hoài Tân" loading="lazy" />
+      <div class="caption">Anh Nguyễn Hoài Tân chia tay các phòng</div>
+    </div>
+  </div><!-- end section accent-blue -->
+
+  <!-- Closing -->
+  <div class="closing-banner">
+    <h2> <span style="color:#ffe0b2;">VietinBank Bình Thuận <br>
+      🎇Đoàn Kết - Bản Lĩnh - Thành Công 🎇</span></h2>
+
+    <p class="hero-sub">🍻 Hội nghị khép lại bằng lễ phát động phong trào thi đua khen thưởng.</p>
+
+    <p class="hero-sub">💙 Đây không chỉ là dịp nhìn lại chặng đường đã qua mà còn là nguồn động lực để toàn thể CBNV Chi nhánh cùng chung sức, quyết tâm hoàn thành xuất sắc nhiệm vụ kinh doanh 6 tháng cuối năm 2026</p>
+
+    <p class="hero-sub">❤️ Xin chúc mừng và cảm ơn toàn thể CBNV đã đồng hành, nỗ lực vì sự phát triển bền vững của VietinBank Bình Thuận!</p>
+
+    <div class="photo-ph">
+      <img src="https://raw.githubusercontent.com/vtb600/vhdn/main/soket2507/lienhoan.jpeg" alt="Bế mạc Hội thao" loading="lazy" />
+    </div>
+  </div>
+
+</main>
+
+<!-- RELATED POSTS -->
+<div id="related-posts-root"></div>
+<script src="https://vtb600.github.io/vhdn/related-posts.js" data-skip-css="true"></script>
+
+<!-- FIX: footer dùng flex, không dùng nhiều <p> ngang hàng -->
+<footer>
+  <div class="footer-tag">VietinBank · Bình Thuận</div>
+  <img class="footer-logo" src="https://raw.githubusercontent.com/vtb600/vhdn/main/logo2.png" alt="VietinBank logo" loading="lazy" />
+  <p>© 2026 <strong>VietinBank Bình Thuận</strong> · Team Văn hoá doanh nghiệp</p>
+</footer>
+
+<script>
+  // Scroll-triggered reveal
+  const sections = document.querySelectorAll('.section');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  sections.forEach(s => io.observe(s));
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"45300ed84931478082d9c757101eb32d","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
