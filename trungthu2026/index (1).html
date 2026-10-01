@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#00417a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/vtb600/vhdn/main/logovtb2.png" />
+  <title>Suất ăn yêu thương VietinBank Bình Thuận – Mùa thứ 5</title>
+  <meta name="description" content="Công đoàn VietinBank Bình Thuận tổ chức chương trình Suất ăn yêu thương mùa thứ 5 tại Bệnh viện Tỉnh. Một suất ăn – một tấm lòng. Trao yêu thương – lan tỏa niềm tin." />
+  <meta property="og:title" content="SUẤT ĂN YÊU THƯƠNG VIETINBANK BÌNH THUẬN – MÙA THỨ 5" />
+  <meta property="og:description" content="Tiếp nối hành trình sẻ chia, Công đoàn VietinBank Bình Thuận tổ chức chương trình Suất ăn yêu thương mùa thứ 5 tại Bệnh viện Tỉnh." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/vtb600/vhdn/main/suatan2026/thumb.jpeg" />
+  <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/vtb600/vhdn/main/suatan2026/thumb.jpeg" />
+  <meta property="og:image:width" content="1161" />
+  <meta property="og:image:height" content="715" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:url" content="https://vtb600.github.io/vhdn/" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --vtb-blue:         #0067a3;
+      --vtb-blue-dark:    #00417a;
+      --vtb-navy:         #003055;
+      --vtb-blue-light:   #e8f3fa;
+      --vtb-blue-lighter: #f3f9fd;
+      --vtb-red:          #e8193c;
+      --vtb-red-dark:     #b3123a;
+      --vtb-gold:         #f5a623;
+      --vtb-gold-deep:    #d97a12;
+      --vtb-gold-light:   #fff4dc;
+      --cream:            #fffaf4;
+      --dark:             #0d2a3d;
+      --muted:            #5a6b7a;
+      --white:            #ffffff;
+      --border:           #ead9c4;
+      --shadow-sm: 0 2px 12px rgba(0,65,122,.08);
+      --shadow-md: 0 10px 30px rgba(0,65,122,.12);
+      --shadow-lg: 0 20px 50px rgba(0,65,122,.20);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 18px;
+      scroll-padding-top: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background:
+        radial-gradient(1100px 480px at 88% -4%, rgba(245,166,35,.12), transparent 60%),
+        radial-gradient(900px 460px at 0% 8%, rgba(232,25,60,.06), transparent 55%),
+        linear-gradient(180deg, #fffaf4 0%, #f4ebe0 100%);
+      color: var(--dark);
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a, button, [role="button"] {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+      cursor: pointer;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -48px;
+      z-index: 200;
+      background: var(--vtb-blue-dark);
+      color: #fff;
+      padding: .6rem 1rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      min-height: 92svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background:
+        linear-gradient(160deg, rgba(0,32,64,.78) 0%, rgba(0,65,122,.72) 55%, rgba(12,28,48,.80) 100%),
+        url('VTB.jpeg') center 35% / cover no-repeat;
+      padding: 3.5rem 1.5rem 5rem;
+      padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,.04) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,.04) 25%, transparent 25%);
+      background-size: 42px 42px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .bubbles { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      opacity: .16;
+      animation: float linear infinite;
+    }
+    .bubble:nth-child(1)  { width:120px; height:120px; background:#fff; left:8%;  top:10%; animation-duration:9s; }
+    .bubble:nth-child(2)  { width:60px;  height:60px;  background:#ffe9bd; left:80%; top:5%;  animation-duration:7s; animation-delay:1s; }
+    .bubble:nth-child(3)  { width:90px;  height:90px;  background:#fff; left:55%; top:70%; animation-duration:11s; animation-delay:2s; }
+    .bubble:nth-child(4)  { width:40px;  height:40px;  background:#ffe9bd; left:20%; top:75%; animation-duration:8s; animation-delay:3s; }
+    .bubble:nth-child(5)  { width:70px;  height:70px;  background:#fff; left:45%; top:15%; animation-duration:10s; animation-delay:.5s; }
+    @keyframes float {
+      0%   { transform: translateY(0) rotate(0deg); }
+      50%  { transform: translateY(-30px) rotate(180deg); }
+      100% { transform: translateY(0) rotate(360deg); }
+    }
+
+    .hero-inner { position: relative; z-index: 2; max-width: 840px; }
+
+    .hero-logo {
+      width: 118px;
+      height: auto;
+      margin: 0 auto 1.4rem;
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,.35));
+      animation: fadeUp .8s ease both;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,.12);
+      border: 1.5px solid rgba(245,166,35,.6);
+      color: #ffe9bd;
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      padding: .55rem 1.25rem;
+      border-radius: 100px;
+      margin-bottom: 1.4rem;
+      animation: fadeUp .8s ease both;
+      line-height: 1.5;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 8vw, 3.5rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.28;
+      margin-bottom: 1.1rem;
+      animation: fadeUp .9s .1s ease both;
+      word-break: break-word;
+      text-shadow: 0 4px 30px rgba(0,15,40,.4);
+    }
+    .hero h1 em {
+      font-style: italic;
+      display: block;
+      background: linear-gradient(115deg, #ffe6ab 0%, #f5a623 38%, #ffd98a 65%, #e8891d 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      filter: drop-shadow(0 4px 16px rgba(245,166,35,.45));
+    }
+
+    .hero-sub {
+      font-size: 1.5rem;
+      color: rgba(255,255,255,.94);
+      max-width: 620px;
+      margin: 0 auto 1.4rem;
+      line-height: 1.8;
+      animation: fadeUp .9s .2s ease both;
+      word-break: break-word;
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: .8rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeUp .9s .3s ease both;
+    }
+    .hero-meta span {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.28);
+      color: #fff;
+      font-size: .9rem;
+      font-weight: 700;
+      padding: .55rem 1.05rem;
+      border-radius: 100px;
+      line-height: 1.4;
+      backdrop-filter: blur(6px);
+      transition: background .25s ease, border-color .25s ease, transform .25s ease;
+    }
+    .hero-meta span:hover {
+      background: rgba(245,166,35,.28);
+      border-color: var(--vtb-gold);
+      transform: translateY(-3px);
+    }
+
+    .hero-wave {
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      height: 90px;
+      z-index: 2;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: -3.2rem auto 2.4rem;
+      position: relative;
+      z-index: 3;
+      max-width: 860px;
+      padding: 0 1.5rem;
+    }
+    .stat-card {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 1.2rem 1rem;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      border-top: 4px solid var(--vtb-gold);
+    }
+    .stat-card strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      color: var(--vtb-blue-dark);
+      line-height: 1.2;
+      margin-bottom: .25rem;
+    }
+    .stat-card span {
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .article {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+    }
+
+    .section {
+      background: var(--white);
+      border-radius: 22px;
+      padding: 2.6rem 2.2rem;
+      margin-bottom: 2.4rem;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s ease, transform .7s ease, box-shadow .3s ease;
+      border-top: 5px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    .section:hover { box-shadow: var(--shadow-lg); }
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section.accent-red  { border-top-color: var(--vtb-red); }
+    .section.accent-gold { border-top-color: var(--vtb-gold); }
+    .section.accent-blue { border-top-color: var(--vtb-blue); }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      font-size: .78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      color: var(--vtb-blue-dark);
+      background: linear-gradient(135deg, var(--vtb-gold-light), #fff);
+      border: 1px solid rgba(217,122,18,.22);
+      padding: .45rem 1rem .45rem .85rem;
+      border-radius: 100px;
+      margin-bottom: 1.1rem;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--vtb-gold), #ff8a00);
+      box-shadow: 0 0 0 4px rgba(245,166,35,.20);
+      flex-shrink: 0;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--vtb-blue-dark);
+      margin-bottom: 1.3rem;
+      line-height: 1.4;
+      word-break: break-word;
+      position: relative;
+      padding-bottom: .85rem;
+    }
+    .section h2::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 60px; height: 4px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, var(--vtb-blue), var(--vtb-gold));
+    }
+
+    .section p {
+      font-size: 1.05rem;
+      line-height: 1.95;
+      color: #2c3e50;
+      margin-bottom: .9rem;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+    .section p:last-child { margin-bottom: 0; }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .9rem;
+      margin-top: 1.4rem;
+    }
+    .value-card {
+      background: linear-gradient(180deg, #fffaf4, #fff);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.1rem .9rem;
+      text-align: center;
+    }
+    .value-card svg {
+      width: 28px;
+      height: 28px;
+      margin: 0 auto .55rem;
+      color: var(--vtb-gold-deep);
+    }
+    .value-card strong {
+      display: block;
+      color: var(--vtb-blue-dark);
+      font-size: .95rem;
+      margin-bottom: .2rem;
+    }
+    .value-card span {
+      font-size: .82rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .activity-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .85rem;
+      margin-top: 1rem;
+    }
+    .activity-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: .9rem;
+      background: linear-gradient(135deg, #fff7ee, #fff);
+      border-left: 4px solid var(--vtb-gold);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      font-size: 1.02rem;
+      color: #2c3e50;
+      line-height: 1.7;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .activity-list li:hover {
+      transform: translateX(6px);
+      box-shadow: var(--shadow-sm);
+      border-left-color: var(--vtb-blue);
+    }
+    .activity-list .num {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--vtb-blue), var(--vtb-navy));
+      color: #fff;
+      font-weight: 800;
+      font-size: .85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: .1rem;
+    }
+
+    .quote-block {
+      position: relative;
+      background: linear-gradient(135deg, var(--vtb-gold-light), #fff 55%, var(--vtb-blue-light));
+      border-left: 5px solid var(--vtb-gold);
+      border-radius: 0 18px 18px 0;
+      padding: 1.8rem 2rem;
+      margin: 1.6rem 0 2.4rem;
+      word-break: break-word;
+      box-shadow: inset 0 0 0 1px rgba(217,122,18,.08);
+    }
+    .quote-block::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 5.5rem;
+      color: var(--vtb-gold);
+      opacity: .28;
+      position: absolute;
+      top: -12px; left: 12px;
+      line-height: 1;
+    }
+    .quote-block p {
+      font-size: 1.12rem;
+      color: #0d2a3d;
+      line-height: 2;
+      margin-bottom: .2rem;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+    .quote-block p strong {
+      color: var(--vtb-blue-dark);
+      font-style: normal;
+      display: block;
+    }
+
+    .photo-ph {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+      text-align: center;
+      margin: 1.2rem 0 0;
+    }
+    .photo-ph img {
+      width: 100%;
+      border-radius: 16px;
+      height: auto;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: transform .3s ease, box-shadow .3s ease;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: var(--vtb-blue-light);
+    }
+    .photo-ph img:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.4rem 0 .2rem;
+    }
+    .photo-grid img {
+      width: 100%;
+      border-radius: 14px;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+      background: var(--vtb-blue-light);
+      box-shadow: var(--shadow-sm);
+      transition: transform .3s ease, box-shadow .3s ease;
+      border: 1px solid var(--border);
+    }
+    .photo-grid img:hover {
+      transform: scale(1.02);
+      box-shadow: var(--shadow-md);
+    }
+
+    .caption {
+      text-align: center;
+      font-style: italic;
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top: .3rem;
+      margin-bottom: .4rem;
+      line-height: 1.5;
+      padding: .45rem .9rem;
+      border-left: 3px solid var(--vtb-gold);
+      border-right: 3px solid var(--vtb-gold);
+      background: var(--vtb-gold-light);
+      border-radius: 8px;
+      max-width: 92%;
+    }
+    .caption strong { color: var(--vtb-blue-dark); font-style: normal; }
+
+    .closing-banner {
+      background:
+        radial-gradient(ellipse at top right, rgba(245,166,35,.32), transparent 50%),
+        radial-gradient(ellipse at bottom left, rgba(232,25,60,.20), transparent 50%),
+        linear-gradient(135deg, #0067a3 0%, #00417a 55%, #003055 100%);
+      border-radius: 24px;
+      padding: 3.2rem 2.6rem;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      word-break: break-word;
+      box-shadow: var(--shadow-lg);
+    }
+    .closing-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,.04) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,.04) 25%, transparent 25%);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+    .closing-banner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.1rem;
+      line-height: 1.4;
+      color: #ffe0b2;
+      word-break: break-word;
+      text-shadow: 0 4px 26px rgba(0,15,40,.4);
+      position: relative;
+      z-index: 1;
+    }
+    .closing-banner p {
+      font-size: 1.05rem;
+      opacity: .94;
+      line-height: 1.85;
+      max-width: 600px;
+      margin: 0 auto .7rem;
+      color: #fff;
+      position: relative;
+      z-index: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem 3.5rem;
+      font-size: .92rem;
+      background: linear-gradient(180deg, var(--vtb-navy), #00223f);
+      color: rgba(255,255,255,.78);
+      border-top: 4px solid var(--vtb-gold);
+      position: relative;
+      overflow: hidden;
+    }
+    footer::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,.03) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,.03) 25%, transparent 25%);
+      background-size: 36px 36px;
+      pointer-events: none;
+    }
+    footer strong { color: #fff; font-weight: 800; }
+    footer .footer-tag {
+      font-size: .72rem;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--vtb-gold);
+      font-weight: 800;
+      margin-bottom: .5rem;
+      position: relative;
+    }
+    footer .footer-logo {
+      width: 92px;
+      height: auto;
+      margin: 0 auto .9rem;
+      filter: drop-shadow(0 6px 18px rgba(0,0,0,.4));
+      position: relative;
+    }
+    footer p { position: relative; }
+
+    .related-posts {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+    .related-posts-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--vtb-blue-dark);
+      margin-bottom: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+    }
+    .related-posts-title::after {
+      content: '';
+      flex: 1;
+      height: 3px;
+      background: linear-gradient(to right, var(--vtb-blue), var(--vtb-gold), transparent);
+      border-radius: 2px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+    .related-card {
+      background: var(--white);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+      color: inherit;
+      transition: transform .25s ease, box-shadow .25s ease;
+      display: flex;
+      flex-direction: column;
+      border-top: 4px solid var(--vtb-blue);
+    }
+    .related-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-top-color: var(--vtb-gold);
+    }
+    .related-card-thumb,
+    .related-card-thumb-ph {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: linear-gradient(135deg, var(--vtb-blue-light), var(--vtb-gold-light));
+      display: block;
+    }
+    .related-card-thumb-ph { overflow: hidden; }
+    .related-card-thumb-ph img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .related-card-body {
+      padding: .9rem 1rem 1.1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+    }
+    .related-card-date {
+      font-size: .78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--vtb-gold-deep);
+    }
+    .related-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.4;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (hover: none) {
+      .hero-meta span:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.28); transform: none; }
+      .activity-list li:hover { transform: none; box-shadow: none; border-left-color: var(--vtb-gold); }
+      .photo-ph img:hover, .photo-grid img:hover { transform: none; box-shadow: var(--shadow-sm); }
+      .section:hover { box-shadow: var(--shadow-md); }
+      .related-card:hover { transform: none; box-shadow: var(--shadow-sm); border-top-color: var(--vtb-blue); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+      .section { opacity: 1; transform: none; }
+    }
+
+    @media (max-width: 700px) {
+      .stats { grid-template-columns: 1fr; margin-top: -2.4rem; }
+      .value-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      html { font-size: 17px; }
+      .bubbles { opacity: .5; }
+      .bubble { animation-play-state: paused; }
+      .hero-badge, .hero-meta span { backdrop-filter: none; -webkit-backdrop-filter: none; }
+      .section { padding: 1.8rem 1.4rem; }
+      .section p, .activity-list li { text-align: left; }
+      .related-posts { padding: 0 1.2rem 3.5rem; }
+      .related-grid { grid-template-columns: 1fr; }
+      .stats { padding: 0 1rem; }
+    }
+
+    @media (max-width: 430px) {
+      html { font-size: 16px; }
+      .hero {
+        padding: 2.5rem 1.2rem 4.5rem;
+        padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+        min-height: auto;
+      }
+      .hero-logo { width: 96px; }
+      .hero h1 { font-size: clamp(1.7rem, 8vw, 2.4rem); }
+      .hero-badge { font-size: .72rem; letter-spacing: .08em; padding: .5rem 1rem; }
+      .hero-sub { font-size: 1rem; text-align: left; margin-bottom: 1.2rem; }
+      .hero-meta { gap: .6rem; }
+      .hero-meta span { font-size: .88rem; padding: .6rem .95rem; }
+      .article { padding: 0 1rem 4rem; }
+      .section { padding: 1.6rem 1.2rem; border-radius: 18px; margin-bottom: 1.6rem; }
+      .section h2 { font-size: 1.28rem; }
+      .section p { font-size: 1rem; line-height: 1.85; }
+      .photo-grid { grid-template-columns: 1fr; }
+      .quote-block { padding: 1.4rem 1.2rem; }
+      .closing-banner { padding: 2.2rem 1.3rem; border-radius: 18px; }
+      .closing-banner h2 { font-size: 1.45rem; }
+      .related-posts { padding: 0 1rem 3rem; }
+      footer {
+        padding: 2.6rem 1.2rem 3rem;
+        padding-bottom: calc(3rem + env(safe-area-inset-bottom, 0px));
+      }
+    }
+
+    @media (max-width: 375px) {
+      html { font-size: 15px; }
+      .hero h1 { font-size: clamp(1.5rem, 7.5vw, 2rem); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#noi-dung">Bỏ qua đến nội dung chính</a>
+
+  <header class="hero">
+    <div class="bubbles">
+      <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+      <div class="bubble"></div><div class="bubble"></div>
+    </div>
+    <div class="hero-inner">
+      <img class="hero-logo" src="https://raw.githubusercontent.com/vtb600/vhdn/main/logovtb2.png" alt="Logo VietinBank" width="118" height="118" />
+      <div class="hero-badge">Công đoàn VietinBank Bình Thuận</div>
+      <h1>
+        Suất ăn yêu thương
+        <em>Mùa thứ 5</em>
+      </h1>
+      <p class="hero-sub">Tiếp nối hành trình sẻ chia tại Bệnh viện Tỉnh. Một suất ăn – một tấm lòng. Trao yêu thương – lan tỏa niềm tin.</p>
+      <div class="hero-meta">
+        <span>Mùa thứ 5</span>
+        <span>Bệnh viện Tỉnh</span>
+        <span>Công đoàn VietinBank Bình Thuận</span>
+      </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fffaf4"/>
+    </svg>
+  </header>
+
+  <div class="stats">
+    <div class="stat-card">
+      <strong>05</strong>
+      <span>Mùa liên tiếp</span>
+    </div>
+    <div class="stat-card">
+      <strong>VIETINBANK</strong>
+      <span>CN BÌNH THUẬN</span>
+    </div>
+    <div class="stat-card">
+      <strong>BỆNH VIỆN</strong>
+      <span>Tỉnh Bình Thuận</span>
+    </div>
+  </div>
+
+  <main class="article" id="noi-dung">
+
+    <article class="section accent-red">
+      <div class="section-label">Hành trình sẻ chia</div>
+      <h2>Suất ăn yêu thương VietinBank Bình Thuận</h2>
+      <p>
+        Tiếp nối hành trình sẻ chia, Công đoàn VietinBank Bình Thuận vừa tổ chức chương trình
+        <strong>“Suất ăn yêu thương VietinBank Bình Thuận”</strong> mùa thứ 5 tại Bệnh viện Tỉnh.
+      </p>
+      <p>
+        Những suất ăn nghĩa tình được trao tận tay bệnh nhân và người nhà bệnh nhân đang điều trị tại bệnh viện,
+        như một lời động viên ấm áp, tiếp thêm tinh thần để mọi người vượt qua những ngày khó khăn.
+      </p>
+      <div class="photo-ph">
+        <img src="hinh1.JPG" alt="Cán bộ Công đoàn VietinBank Bình Thuận tại chương trình Suất ăn yêu thương mùa 5 ở Bệnh viện Tỉnh" width="1200" height="900" />
+        <div class="caption">Tập thể Công đoàn VietinBank Bình Thuận tại Bệnh viện Tỉnh</div>
+      </div>
+    </article>
+
+    <article class="section accent-gold">
+      <div class="section-label">Nghĩa tình trao đi</div>
+      <h2>Trao tận tay – ấm lòng người bệnh</h2>
+      <p>
+        Từng suất ăn được chuẩn bị chu đáo, mang thương hiệu VietinBank, được trao trực tiếp đến bệnh nhân
+        và người nhà đang đồng hành trong quá trình điều trị. Không chỉ là bữa ăn, đó còn là lời động viên kịp thời
+        giữa những ngày dài ở bệnh viện.
+      </p>
+      <ul class="activity-list">
+        <li>
+          <span class="num">1</span>
+          <span>Suất ăn nghĩa tình được trao tận tay bệnh nhân và người nhà đang điều trị.</span>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <span>Lời động viên ấm áp, tiếp thêm tinh thần để vượt qua những ngày khó khăn.</span>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <span>Hình ảnh cán bộ VietinBank trách nhiệm – nhân văn – vì cộng đồng được lan tỏa.</span>
+        </li>
+      </ul>
+      <div class="photo-grid">
+        <img src="hinh3.JPG" alt="Hộp suất ăn yêu thương mang thương hiệu VietinBank" width="800" height="600" loading="lazy" />
+        <img src="hinh2.JPG" alt="Cán bộ VietinBank Bình Thuận trao suất ăn yêu thương" width="800" height="600" loading="lazy" />
+      </div>
+      <div class="caption">Suất ăn nghĩa tình mang thương hiệu VietinBank</div>
+    </article>
+
+    <article class="section accent-blue">
+      <div class="section-label">Năm mùa liên tục</div>
+      <h2>Duy trì thường niên, lan tỏa yêu thương</h2>
+      <p>
+        Được duy trì thường niên qua 5 mùa, chương trình là hoạt động an sinh xã hội ý nghĩa của
+        Công đoàn VietinBank Bình Thuận, lan tỏa tinh thần <strong>“tương thân tương ái”</strong>,
+        góp phần xây dựng hình ảnh người cán bộ VietinBank trách nhiệm – nhân văn – vì cộng đồng.
+      </p>
+      <div class="value-grid">
+        <div class="value-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <strong>Trách nhiệm</strong>
+          <span>Đồng hành cùng cộng đồng</span>
+        </div>
+        <div class="value-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          <strong>Nhân văn</strong>
+          <span>Sẻ chia đúng lúc cần</span>
+        </div>
+        <div class="value-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>
+          </svg>
+          <strong>Vì cộng đồng</strong>
+          <span>Tương thân tương ái</span>
+        </div>
+      </div>
+      <div class="photo-ph">
+        <img src="hinh4.JPG" alt="Nhóm cán bộ Công đoàn VietinBank Bình Thuận tại chương trình mùa 5" width="1200" height="900" loading="lazy" />
+        <div class="caption">Cán bộ Công đoàn VietinBank Bình Thuận – mùa thứ 5</div>
+      </div>
+    </article>
+
+    <div class="quote-block">
+      <p><strong>Một suất ăn – một tấm lòng.</strong></p>
+      <p>Trao yêu thương – lan tỏa niềm tin.</p>
+    </div>
+
+    <div class="closing-banner">
+      <h2>Một suất ăn – một tấm lòng<br />Trao yêu thương – lan tỏa niềm tin</h2>
+      <p>Công đoàn VietinBank Bình Thuận sẽ tiếp tục duy trì hành trình an sinh ý nghĩa, đồng hành cùng người bệnh và người nhà trên mọi chặng đường khó khăn.</p>
+    </div>
+
+  </main>
+
+  <div id="related-posts-root"></div>
+  <script src="https://vtb600.github.io/vhdn/related-posts.js" data-skip-css="true"></script>
+
+  <footer>
+    <div class="footer-tag">VietinBank · Bình Thuận</div>
+    <img class="footer-logo" src="https://raw.githubusercontent.com/vtb600/vhdn/main/logo2.png" alt="Logo VietinBank" width="92" height="92" loading="lazy" />
+    <p>© 2026 <strong>VietinBank Bình Thuận</strong> · Team Văn hoá doanh nghiệp</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    sections.forEach(s => io.observe(s));
+  </script>
+</body>
+</html>
