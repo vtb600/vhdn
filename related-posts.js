@@ -22,6 +22,13 @@ const RELATED_POSTS = [
     date: "Ngày 26, Tháng 9, Năm 2026",
     title: "CX DAY 2026 - TRẢI NGHIỆM XUẤT SẮC, KẾT NỐI NIỀM TIN"
   },
+   {
+    url: "https://vtb600.github.io/vhdn/trungthu2026/index.html",
+    thumb: "https://raw.githubusercontent.com/vtb600/vhdn/main/trungthu2026/thumb.jpeg",
+    alt: "Đêm hội trăng rằm 2026",
+    date: "Ngày 19, Tháng 9, Năm 2026",
+    title: "ĐÊM HỘI TRĂNG RẰM 2026"
+  },
   {
     url: "https://vtb600.github.io/vhdn/suatan2026/index.html",
     thumb: "https://raw.githubusercontent.com/vtb600/vhdn/main/suatan2026/thumb.jpeg",
