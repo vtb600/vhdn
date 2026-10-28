@@ -504,6 +504,95 @@
       margin-top: .7rem;
     }
 
+ /* ── RELATED POSTS ── */
+    .related-posts {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+    .related-posts-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+    }
+    .related-posts-title::after {
+      content: '';
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(to right, var(--vtb-blue), var(--vtb-gold), transparent);
+      border-radius: 2px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+    .related-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,.07);
+      text-decoration: none;
+      color: inherit;
+      transition: transform .25s ease, box-shadow .25s ease;
+      display: flex;
+      flex-direction: column;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .related-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 32px rgba(0,103,163,.2);
+    }
+    .related-card-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: linear-gradient(135deg, var(--vtb-blue-light), var(--vtb-gold-light));
+      display: block;
+    }
+    .related-card-thumb-ph {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, var(--vtb-blue-light), var(--vtb-gold-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      overflow: hidden;
+    }
+    .related-card-thumb-ph img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .related-card-body {
+      padding: .9rem 1rem 1.1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+    }
+    .related-card-date {
+      font-size: .78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--vtb-blue);
+    }
+    .related-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.4;
+    }
+    
     /* animations */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
