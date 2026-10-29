@@ -16,18 +16,18 @@
 
 const RELATED_POSTS = [
   {
+    url: "https://vtb600.github.io/vhdn/hienmau2410/index.html",
+    thumb: "https://raw.githubusercontent.com/vtb600/vhdn/main/hienmau2410/thumb.jpeg",
+    alt: "NGÀY HỘI HIẾN MÁU TÌNH NGUYỆN 2026",
+    date: "Ngày 24, Tháng 10, Năm 2026",
+    title: "NGÀY HỘI HIẾN MÁU TÌNH NGUYỆN 2026"
+  },
+  {
     url: "https://vtb600.github.io/vhdn/cx2609/index.html",
     thumb: "https://raw.githubusercontent.com/vtb600/vhdn/main/cx2609/thumb.jpeg",
     alt: "CX DAY 2026 - Trải nghiệm xuất sắc, kết nối niềm tin",
     date: "Ngày 26, Tháng 9, Năm 2026",
     title: "CX DAY 2026 - TRẢI NGHIỆM XUẤT SẮC, KẾT NỐI NIỀM TIN"
-  },
-  {
-    url: "https://vtb600.github.io/vhdn/hienmau2410/index.html",
-    thumb: "https://raw.githubusercontent.com/vtb600/vhdn/main/hienmau2410/thumb.jpeg",
-    alt: "Ngày hội Hiến máu tình nguyện 2026",
-    date: "Ngày 24, Tháng 10, Năm 2026",
-    title: "Ngày hội Hiến máu tình nguyện 2026"
   },
    {
     url: "https://vtb600.github.io/vhdn/trungthu2026/index.html",
